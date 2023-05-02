@@ -25,6 +25,31 @@ body {
   transform: translate(-50%, 10%);
 }
 
+.static,
+.animated {
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card > img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  transform: scale(1.01);
+  filter: sepia(100%) saturate(200%) brightness(50%) hue-rotate(180deg);
+}
+
+.card:hover > img {
+  /* opacity: 1; */
+  filter: sepia(0%);
+}
+
 .card-group:hover > .card:nth-child(1) {
   transform: translate(-60%, 10%) rotate(-3deg);
 }
