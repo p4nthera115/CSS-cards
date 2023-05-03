@@ -33,7 +33,7 @@ body {
   left: 0;
 }
 
-.card > img {
+.card > video {
   display: block;
   height: 100%;
   width: 100%;
@@ -43,12 +43,10 @@ body {
   transition: opacity 0.3s ease-in-out;
   transform: scale(1.01);
   filter: sepia(100%) saturate(200%) brightness(50%) hue-rotate(180deg);
-  animation: gif 0.5s infinite steps(1);
 }
 
-.card:hover > img {
+.card:hover > video {
   filter: sepia(0%);
-  animation-play-state: paused;
 }
 
 .card-group:hover > .card:nth-child(1) {
