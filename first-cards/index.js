@@ -11,35 +11,35 @@ const clickCards = () => {
   if (cardsGroup[0].attributes[2].value === "inactive") {
     cardsGroup[0].attributes[2].value = "active";
 
-    first.style = "transform: translate(-300%, 10%)";
+    first.style = "transform: translate(-280%, 10%)";
     first.children[0].style =
       "opacity: 1; transition: opacity 0.3s ease-in-out;";
 
-    second.style = "transform: translate(-133%, 10%)";
+    second.style = "transform: translate(-123%, 10%)";
     second.children[0].style =
       "opacity: 1; transition: opacity 0.3s ease-in-out;";
 
-    third.style = "transform: translate(33%, 10%)";
+    third.style = "transform: translate(28%, 10%)";
     third.children[0].style =
       "opacity: 1; transition: opacity 0.3s ease-in-out;";
 
-    fourth.style = "transform: translate(200%, 10%)";
+    fourth.style = "transform: translate(180%, 10%)";
     fourth.children[0].style =
       "opacity: 1; transition: opacity 0.3s ease-in-out;";
   } else if (cardsGroup[0].attributes[2].value === "active") {
     cardsGroup[0].attributes[2].value = "inactive";
 
     first.style = "";
-    first.children[0].style = "opacity: 0;";
+    // first.children[0].style = "opacity: 0;";
 
     second.style = "";
-    second.children[0].style = "opacity: 0;";
+    // second.children[0].style = "opacity: 0;";
 
     third.style = "";
-    third.children[0].style = "opacity: 0;";
+    // third.children[0].style = "opacity: 0;";
 
     fourth.style = "";
-    fourth.children[0].style = "opacity: 0;";
+    // fourth.children[0].style = "opacity: 0;";
   }
 
   console.log(cardsGroup[0].attributes[2].value);
