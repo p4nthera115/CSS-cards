@@ -44,3 +44,10 @@ const clickCards = () => {
 
   console.log(cardsGroup[0].attributes[2].value);
 };
+
+const playVid = (video) => {
+  video.play();
+};
+const stopVid = (video) => {
+  video.pause();
+};
